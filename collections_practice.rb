@@ -66,15 +66,15 @@ def find_cool(array)
 end
 
 def organize_schools(schools)
-  newHash = {}
+  new_hash = {}
   schools.each do |school_name, location_hash|
     location = location_hash[:location]
-    if newHash[location]
-      newHash[location] << school_name
+    if new_hash[location]
+      new_hash[location] << school_name
     else
-      newHash[location] = []
-      newHash[location] << school_name
+      new_hash[location] = []
+      new_hash[location] << school_name
     end
   end
-  newHash
+  new_hash
 end
